@@ -1,0 +1,214 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins ',sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background-color: rgba(0, 0, 0, 0.712);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.2s ease;
+
+}
+.logo:hover{
+    color: orangered;
+    text-shadow: 0 0 25px orangered,
+   0 0 50px orangered;
+   transform: scale(1.1);             
+}
+span{
+    color:orangered;
+}
+.navbar a{
+    font-size: 18px;
+    color: white;
+    font-weight:500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+.contact{
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.contact:hover{
+    background-color: orangered;
+    box-shadow: none;
+    color: white;
+    
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background:rgba(223, 216, 216, 0.712) ;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+.home-content{
+    max-width: 800px;
+}
+.home-content h3{
+    font-size: 40px;
+line-height: 1.2;
+
+}
+.home-content h1{
+    font-size: 60px;
+    line-height: 1.2;
+}
+.home-content p{
+    font-size: 20px;
+    margin: 25px 30px;
+}
+.btn-box{
+    width: 300px;
+    display: flex;
+    gap: 2em;
+    margin-top: 10px;
+}
+.btn-1{
+    background-color: rgb(245, 11, 11);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+.btn-1:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+} 
+.btn-2{
+    background-color: rgb(15, 15, 15);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    
+}
+.btn-2:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+.img-box img{
+    border-radius: 50%;
+    width: 300px;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+    width: 25px;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background-color: black;
+}
+.about-img img{
+    position: relative;
+    width: 300px;
+    box-shadow: 0 0 25px orangered,
+                0 0 50px orangered;
+        border-radius: 50%;
+}
+.about-content h2{
+    text-align: left;
+    color: rgb(243, 4, 4);
+    font-size: 40px;
+}
+.about-content h3{
+    font-size: 60px;
+    color: rgb(211, 14, 14);
+
+}
+.about-content p{
+    color: rgb(226, 3, 3);
+    font-size: 20px;
+    margin: 2em 0 3em;
+}
+.about-content .btn-2{
+    background-color: red;
+    color: white;
+}
+.about-content.btn-2:hover{
+    color: white;
+
+}
+.contact-form h2{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 30px;
+}
+.contact-form form{
+max-width: 50em;
+margin: 1rem auto;
+text-align: center;
+margin-bottom: 3em;
+}
+.contact-form form.input-box,input{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 15px;
+    padding:1em;
+    background:  rgb(241, 241, 241);
+    border-radius: .8rem;
+}
+.contact-form form.input-box input,
+.contact-form form textarea{
+    width: 100%;
+    padding: 1.5em;
+    font-size: 15px;
+    color: black;
+    background: rgb(241, 241, 241);
+    border-radius: .8rem;
+    margin: 1rem 0;
+    resize:none;
+}
+.contact-form form.input-box{
+    padding: 20%
+    
+}
